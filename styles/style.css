@@ -1,0 +1,141 @@
+@media all and (max-width:864px){
+    #BigMenu{
+        display: none;
+    }
+    #logo{
+        display: flex;
+    }
+    a:hover
+    {
+      color: tomato;
+    }
+    
+    #menuToggle
+    {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      
+      z-index: 1;
+      
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      
+      -webkit-touch-callout: none;
+    }
+    
+   
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #cdcdcd;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+}
+body{
+    margin: 0;
+    font-family: 'Saira', sans-serif;
+    background-image: url("../images/brickwall.png");
+}
+#backImg{
+    background: url(../images/header.jpg);
+    height: 400px;
+    filter: brightness(0.5);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+#topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position:sticky;
+}
+ a{
+    text-decoration: none;
+}
+#logo{
+    text-shadow: 0px 10px 5px rgba(255, 255, 255, 0.3);
+    font-size: 40px;
+    color: #bb7272;
+    font-weight: bold;
+}
+#logo span{
+    color:#852727
+}
+#BigMenu>ul{
+    width: 600px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+#BigMenu ul a{
+    text-shadow: 0px 10px 4px rgba(255, 255, 255, 0.3);
+    color: #a7a41d;
+    font-weight: 700;
+    font-size: 25px;
+}
+#BigMenu>ul>li>ul{
+    display: none;
+}
+#BigMenu>ul>li:hover>ul{
+    display: flex;
+    justify-content:flex-start space-between;
+   
+}
+#BigMenu>ul>li>ul{
+    flex-direction: column;
+    list-style: none;
+    border:  2px dashed #852727;
+    border-radius: 3px;
+}
+#menuToggle{
+    display: none;
+}
+
+
+
+
+
+
