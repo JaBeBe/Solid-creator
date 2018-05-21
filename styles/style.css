@@ -1,22 +1,4 @@
-@media (max-width:864px){
-    #BigMenu{
-        display: none;
-    }
-    #logo{
-        display: none;
-    }
-    #MLogo{
-        visibility: visible;
-        text-shadow: 0px 10px 5px rgba(255, 255, 255, 0.3);
-        font-size: 40px;
-        color: #bb7272;
-        font-weight: bold;
-    }
-    #MLogo span{
-        color:#852727;
-    }
-    
-}
+
 body{
     margin: 0;
     font-family: 'Saira', sans-serif;
@@ -78,8 +60,24 @@ body{
     border:  2px dashed #852727;
     border-radius: 3px;
 }
-#menuToggle{
-    display: none;
+@media all and (max-width:864px){
+    #BigMenu{
+        display: none;
+    }
+    #logo{
+        display: none;
+    }
+    #MLogo{
+        visibility: visible;
+        text-shadow: 0px 10px 5px rgba(255, 255, 255, 0.3);
+        font-size: 40px;
+        color: #bb7272;
+        font-weight: bold;
+    }
+    #MLogo span{
+        color:#852727
+    }
+    
 }
 
 
