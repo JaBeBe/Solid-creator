@@ -33,34 +33,33 @@ body{
 #logo span{
     color:#852727
 }
-#BigMenu>ul{
+nav>ul{
     width: 600px;
     list-style: none;
     display: flex;
     justify-content: space-between;
     margin: 20px;
 }
-#BigMenu ul a{
+nav ul a{
     text-shadow: 0px 10px 4px rgba(255, 255, 255, 0.3);
     color: #a7a41d;
     font-weight: 700;
     font-size: 25px;
 }
-#BigMenu>ul>li>ul{
+nav>ul>li>ul{
     display: none;
 }
-#BigMenu>ul>li:hover>ul{
-    display: flex;
-    justify-content:flex-start space-between;
-   
+nav>ul>li:hover>ul{
+    display: flex; 
 }
-#BigMenu>ul>li>ul{
+nav>ul>li>ul{
     flex-direction: column;
     list-style: none;
     border:  2px dashed #852727;
     border-radius: 3px;
 }
-@media all and (max-width:864px){
+
+@media all and (max-width:700px){
     #BigMenu{
         display: none;
     }
@@ -76,8 +75,7 @@ body{
     }
     #MLogo span{
         color:#852727
-    }
-    
+    }  
 }
 
 
